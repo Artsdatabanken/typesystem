@@ -16,3 +16,6 @@ deploy:
     - npx travis-deploy-once "npx semantic-release"
 after_success:
   - npm run coveralls
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

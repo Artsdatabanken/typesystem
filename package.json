@@ -1,5 +1,5 @@
 {
-  "name": "typesystem",
+  "name": "@artsdatabanken/typesystem",
   "version": "0.0.0-development",
   "description":
     "Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem",

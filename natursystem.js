@@ -1,4 +1,4 @@
-const Kodesystem = require('./kodesystem')
+const Kodesystem = require("./kodesystem");
 
 // Natur i Norge (NiN) kodesystem
 class Natursystem extends Kodesystem {
@@ -16,11 +16,9 @@ class Natursystem extends Kodesystem {
     return !!kode.match(/NA_[A-Z][0-9]+-[0-9]+/gi);
   }
 
-  // Sjekker om koden er et kartleggingsnivå
-  erKartleggingsnivå(kode) {
-    if (kode.match(/-E-/gi)) return true;
-    if (kode.match(/-C-/gi)) return true;
-    return false;
+  // Sjekker om koden er på kartleggingsnivå over grunntype (1:500)
+  erHøyereKartleggingsnivå(kode) {
+    return !!kode.match(/-[BCDE]-/gi);
   }
 }
 

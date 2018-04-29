@@ -1,5 +1,5 @@
 {
-  "name": "typesystem",
+  "name": "@artsdatabanken/typesystem",
   "version": "0.0.0-development",
   "description":
     "Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem",
@@ -28,6 +28,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",

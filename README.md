@@ -4,4 +4,6 @@
 
 # typesystem
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/typesystem.svg)](https://greenkeeper.io/)
+
 Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem

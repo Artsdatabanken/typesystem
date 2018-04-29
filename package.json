@@ -1,0 +1,34 @@
+{
+  "name": "typesystem",
+  "version": "0.0.0-development",
+  "description": "Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Artsdatabanken/typesystem.git"
+  },
+  "keywords": [
+    "typesystem",
+    "nin",
+    "takson"
+  ],
+  "author": "Bjorn Reppen <bjreppen@gmail.com> (https://github.com/Mashi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Artsdatabanken/typesystem/issues"
+  },
+  "homepage": "https://github.com/Artsdatabanken/typesystem#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1",
+    "semantic-release": "^15.1.7",
+    "travis-deploy-once": "^5.0.0"
+  }
+}

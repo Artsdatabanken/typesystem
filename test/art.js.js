@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Art = require("../art");
+var Art = require("../src/art");
 
 const art = new Art();
 

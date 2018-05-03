@@ -1,5 +1,5 @@
 var assert = require("assert");
-var typesystem = require("../index");
+var typesystem = require("../src/index");
 
 describe("typesystem", function() {
   it("splitt T44-E-1", function() {

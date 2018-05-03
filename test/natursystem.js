@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Natursystem = require("../natursystem");
+var Natursystem = require("../src/natursystem");
 
 const natursystem = new Natursystem();
 

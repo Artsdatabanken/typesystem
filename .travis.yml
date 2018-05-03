@@ -3,7 +3,8 @@ cache:
   directories:
     - ~/.npm
 script:
-- yarn test-travis
+  - yarn build
+  - yarn test-travis
 notifications:
   email: false
 node_js:

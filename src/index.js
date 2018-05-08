@@ -1,10 +1,12 @@
 const Natursystem = require("./natursystem");
 const Art = require("./art");
+const AdministrativtOmråde = require("./administrativtOmråde");
 
 class Typesystem {
   constructor() {
     this.Art = new Art();
     this.Natursystem = new Natursystem();
+    this.AdministrativtOmråde = new AdministrativtOmråde();
   }
 
   // Deler opp koden i ett array av segmenter, 1 for hvert nivå

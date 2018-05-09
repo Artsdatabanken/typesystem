@@ -1,0 +1,15 @@
+{
+  "prefiks": "AR",
+  "tittel": "art",
+  "nivåer": [
+    "liv",
+    "domene",
+    "rike",
+    "rekke",
+    "klasse",
+    "orden",
+    "familie",
+    "slekt",
+    "art"
+  ]
+}

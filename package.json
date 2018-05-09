@@ -1,17 +1,14 @@
 {
   "name": "@artsdatabanken/typesystem",
   "version": "0.0.0-development",
-  "description":
-    "Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem",
+  "description": "Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem",
   "main": "build/index.js",
   "scripts": {
-    "build":
-      "babel src --source-maps --presets babel-preset-es2015 --out-dir build",
+    "build": "babel src --source-maps --presets babel-preset-env --out-dir build",
     "start": "npm run webpack",
     "webpack": "webpack -d --watch",
     "test": "mocha test/*",
-    "test-travis":
-      "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
@@ -21,7 +18,11 @@
     "type": "git",
     "url": "https://github.com/Artsdatabanken/typesystem.git"
   },
-  "keywords": ["typesystem", "nin", "takson"],
+  "keywords": [
+    "typesystem",
+    "nin",
+    "takson"
+  ],
   "author": "Bjorn Reppen <bjreppen@gmail.com> (https://github.com/Mashi)",
   "license": "MIT",
   "bugs": {
@@ -38,7 +39,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-plugin-inline-json": "^1.2.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "commitizen": "^2.9.6",
     "coveralls": "^3.0.0",
     "cz-conventional-changelog": "^2.1.0",

@@ -1,0 +1,22 @@
+{
+  "prefiks": "NA",
+  "tittel": "natursystem",
+  "nivåer": [
+    "natursystem",
+    "hovedtypegruppe",
+    "hovedtype",
+    "kartleggingsenhet 1:20000",
+    "kartleggingsenhet 1:5000",
+    "grunntype"
+  ],
+  "hovedtype": {
+    "prefiks": "NA_HT",
+    "definisjonsgrunnlag": { "prefiks": "NA_HT-DG" },
+    "prosedyrekategori": {
+      "prefiks": "NA_HT-PK"
+    },
+    "kunnskap": {
+      "prefiks": "NA_HT-KG"
+    }
+  }
+}

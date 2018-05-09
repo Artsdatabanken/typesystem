@@ -1,7 +1,5 @@
 var assert = require("assert");
-var Art = require("../src/art");
-
-const art = new Art();
+var art = require("../src/AR-metoder");
 
 describe("Art", function() {
   it("lag kode 32", function() {

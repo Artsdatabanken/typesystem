@@ -1,11 +1,12 @@
 var assert = require("assert");
-var Natursystem = require("../src/natursystem");
-
-const natursystem = new Natursystem();
+var natursystem = require("../src/NA-metoder");
 
 describe("Natursystem", function() {
+  it("klasse", function() {
+    assert.equal(natursystem.klasse(), "natursystem");
+  });
   it("hovedtype", function() {
-    assert.equal(natursystem.hovedtype("NA_T44-E-1"), "NA_T44");
+    assert.equal(natursystem.slåOppHovedtype("NA_T44-E-1"), "NA_T44");
   });
   it("T44-E-1 er ikke grunntype", function() {
     assert.equal(natursystem.erGrunntype("NA_T44-E-1"), false);

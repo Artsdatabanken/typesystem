@@ -1,23 +1,29 @@
-const Natursystem = require("./natursystem");
-const Art = require("./art");
-const AdministrativtOmråde = require("./administrativtOmråde");
+const natursystem = require("./NA-metoder");
+const art = require("./AR-metoder");
+const administrativtOmråde = require("./AO-metoder");
+const miljøvariabel = require("./MI-metoder");
+const fremmedArt = require("./FA-metoder");
+const verneområde = require("./VV-metoder");
 
-class Typesystem {
-  constructor() {
-    this.Art = new Art();
-    this.Natursystem = new Natursystem();
-    this.AdministrativtOmråde = new AdministrativtOmråde();
-  }
+const typesystem = {
+  art: art,
+  natursystem: natursystem,
+  administrativtOmråde: administrativtOmråde,
+  miljøvariabel: miljøvariabel,
+  fremmedArt: fremmedArt,
+  administrativtOmråde: administrativtOmråde,
+  verneområde: verneområde,
+  rotkode: "~",
 
   // Deler opp koden i ett array av segmenter, 1 for hvert nivå
   // i.e. 'NA_T44-E-1 => ['NA','T','44','E','1']
-  splittKode(kode) {
+  splittKode: function(kode) {
     let segments = kode.match(/[a-zA-Z]+|[0-9]+/g);
     return segments || [];
-  }
+  },
 
   // Erstatter tegn som ikke kan brukes i en url
-  medGyldigeTegn(s) {
+  medGyldigeTegn: function(s) {
     const r = s
       .split("")
       .map(c => {
@@ -28,11 +34,11 @@ class Typesystem {
       })
       .join("");
     return r;
-  }
+  },
 
-  capitalizeTittel(string) {
+  capitalizeTittel: function(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
   }
-}
+};
 
-module.exports = new Typesystem();
+module.exports = typesystem;

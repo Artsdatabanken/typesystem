@@ -3,6 +3,8 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
+[![NPM Downloads](https://img.shields.io/npm/dm/@artsdatabanken/typesystem.svg?style=for-the-badge)](https://npmcharts.com/compare/@artsdatabanken/typesystem?minimal=true)
+
 # typesystem
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artsdatabanken/typesystem.svg)](https://greenkeeper.io/)

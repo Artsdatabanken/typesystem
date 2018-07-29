@@ -23,7 +23,7 @@ const typesystem = {
     if (!(prefiks in this.nivåer)) return "";
     const grein = this.nivåer[prefiks];
     if (frags.length >= grein.length) return "?";
-    return grein[frags.length - 1];
+    return grein[frags.length - 1].toLowerCase();
   },
 
   // Deler opp koden i ett array av segmenter, 1 for hvert nivå

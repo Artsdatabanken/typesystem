@@ -25,6 +25,6 @@ describe("typesystem", function() {
     assert.equal(typesystem.capitalizeTittel("cAnis LuPus"), "Canis lupus");
   });
   it("Nivå for åker", function() {
-    assert.equal(typesystem.hentNivå("NA_T44"), "hovedtype");
+    assert.equal(typesystem.hentNivaa("NA_T44"), "hovedtype");
   });
 });

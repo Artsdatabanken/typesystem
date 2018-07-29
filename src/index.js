@@ -20,9 +20,8 @@ const typesystem = {
   hentNivaa(kode) {
     const frags = this.splittKode(kode);
     const prefiks = frags[0];
-    if (!(prefiks in this.nivåer)) return "";
+    if (!(prefiks in this.nivåer)) return [];
     const grein = this.nivåer[prefiks];
-    if (frags.length > grein.length) return "?";
     return grein.slice(0, frags.length - 1).reverse();
   },
 

@@ -17,7 +17,7 @@ const typesystem = {
   rotkode: "~",
   nivåer: nivåer,
 
-  hentNivå(kode) {
+  hentNivaa(kode) {
     const frags = this.splittKode(kode);
     const prefiks = frags[0];
     if (!(prefiks in this.nivåer)) return "";

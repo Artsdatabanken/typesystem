@@ -2,9 +2,6 @@ var assert = require("assert");
 var natursystem = require("../src/NA-metoder");
 
 describe("Natursystem", function() {
-  it("klasse", function() {
-    assert.equal(natursystem.klasse(), "natursystem");
-  });
   it("hovedtype", function() {
     assert.equal(natursystem.slåOppHovedtype("NA_T44-E-1"), "NA_T44");
   });

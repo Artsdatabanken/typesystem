@@ -27,7 +27,7 @@ describe("typesystem", function() {
   it("Nivå for åker", function() {
     assert.equal(
       typesystem.hentNivaa("NA_T44").join(","),
-      "hovedtypegruppe,naturmangfold"
+      "hovedtype,hovedtypegruppe,naturmangfold"
     );
   });
 });

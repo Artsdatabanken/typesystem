@@ -22,7 +22,7 @@ const typesystem = {
     const prefiks = frags[0];
     if (!(prefiks in this.nivåer)) return [];
     const grein = this.nivåer[prefiks];
-    return grein.slice(0, frags.length - 1).reverse();
+    return grein.slice(0, frags.length).reverse();
   },
 
   // Deler opp koden i ett array av segmenter, 1 for hvert nivå

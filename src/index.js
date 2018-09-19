@@ -38,8 +38,8 @@ const typesystem = {
   },
 
   erSkille: function(c, p) {
+    if ("_-".indexOf(p) >= 0) return false
     if ("_-".indexOf(c) >= 0) return true
-    //if ("_-".indexOf(p) >= 0) return false
     const digits = "0123456789"
     const cdig = digits.indexOf(c) >= 0
     const pdig = digits.indexOf(p) >= 0
@@ -65,11 +65,7 @@ const typesystem = {
     if (segments.length <= 0) return null
     const trimOff = segments[segments.length - 1].length
     let end = kode.length - trimOff
-    console.log(end)
-    console.log(kode.substring(0, end))
     if (end > 0 && "-_".indexOf(kode[end - 1]) >= 0) end -= 1
-    console.log(end)
-    console.log(kode.substring(0, end))
     return kode.substring(0, end)
   },
 

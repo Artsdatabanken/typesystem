@@ -33,7 +33,13 @@ describe("typesystem", function() {
   it("T44-B-1 foreldre", function() {
     assert.equal(
       typesystem.forfedre("NA_T44-B-1").join(","),
-      "NA,NA_T,NA_T44,NA_T44-B,NA_T44-B-,NA_T44-B-1"
+      "NA,NA_T,NA_T44,NA_T44-B,NA_T44-B-1"
+    )
+  })
+  it("T44-B-1 foreldre", function() {
+    assert.equal(
+      typesystem.forfedre("NA_T44-B-1").join(","),
+      "NA,NA_T,NA_T44,NA_T44-B,NA_T44-B-1"
     )
   })
 })

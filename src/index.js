@@ -1,3 +1,4 @@
+// asdf
 const natursystem = require("./NA-metoder")
 const art = require("./AR-metoder")
 const administrativtOmråde = require("./AO-metoder")

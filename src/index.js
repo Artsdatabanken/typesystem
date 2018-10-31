@@ -28,7 +28,7 @@ const typesystem = {
 
   // Deler opp koden i ett array av segmenter, 1 for hvert nivå
   // tar hensyn til målestokk for NA
-  // i.e. 'NA_T44-E-1 => ['NA','T','44','E-1']
+  // i.e. 'NA-T44-E-1 => ['NA','T','44','E-1']
   splittKode: function(kode) {
     if (kode && kode.toUpperCase().indexOf("NA") === 0) {
       let segments = kode.match(/([a-eA-E]-[0-9]+)|[a-zA-Z]+|[0-9]+/g)

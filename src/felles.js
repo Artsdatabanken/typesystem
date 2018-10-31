@@ -1,5 +1,5 @@
 function leggTilPrefiks(ending) {
-  return this.prefiks + "_" + ending;
+  return this.prefiks + "-" + ending
 }
 
-module.exports = { leggTilPrefiks };
+module.exports = { leggTilPrefiks }

@@ -31,7 +31,7 @@ const typesystem = {
   // i.e. 'NA-T44-E-1 => ['NA','T','44','E-1']
   splittKode: function(kode) {
     if (kode && kode.toUpperCase().indexOf("NA") === 0) {
-      let segments = kode.match(/([a-eA-E]-[0-9]+)|[a-zA-Z]+|[0-9]+/g)
+      let segments = kode.match(/([a-eA-E]-[1-9]+)|[a-zA-Z]+|[0-9]+/g)
       return segments || []
     }
     let segments = kode.match(/[a-zA-Z]+|[0-9]+/g)

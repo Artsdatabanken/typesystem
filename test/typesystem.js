@@ -14,6 +14,9 @@ describe("typesystem", function() {
   it("forelder T44-E1-C2", function() {
     assert.equal(typesystem.forelder("NA-T44-E-2"), "NA-T44")
   })
+  it("forelder NA-LKM-S3-E-0", function() {
+    assert.equal(typesystem.forelder("NA-LKM-S3-E-0"), "NA-LKM-S3-E")
+  })
 
   it("Davvisámegiella med gyldige tegn", function() {
     assert.equal(typesystem.medGyldigeTegn("Davvisámegiella"), "Davvismegiella")

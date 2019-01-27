@@ -1,30 +1,45 @@
 {
-  "AO": ["administrativt område", "fylke", "kommune"],
-  "AR": [
-    "art",
-    "rike",
-    "rekke",
-    "underrekke",
-    "klasse",
-    "overorden",
-    "orden",
-    "underorden",
-    "infraorden",
-    "familie",
-    "slekt",
-    "art"
-  ],
-  "NA-BS": ["beskrivelsesystem", "kilde til variasjon", "variabel", "verdi"],
-  "NA-MI": ["lokal kompleks miljøvariabel", "miljøvariabel", "basistrinn"],
-  "NA": [
-    "naturmangfold",
-    "hovedtypegruppe",
-    "hovedtype",
-    "kartleggingsenhet 1:20000",
-    "kartleggingsenhet 1:5000",
-    "grunntype"
-  ],
-  "OR": ["organisasjon"],
-  "RL": ["rødlistekategori"],
-  "VV": ["naturvernområde"]
+  "AO": { "nivå": ["administrativt område", "fylke", "kommune"] },
+  "AR": {
+    "RL": { "nivå": ["rødlistekategori"] },
+    "nivå": [
+      "art",
+      "rike",
+      "rekke",
+      "underrekke",
+      "klasse",
+      "overorden",
+      "orden",
+      "underorden",
+      "infraorden",
+      "familie",
+      "slekt",
+      "art"
+    ]
+  },
+  "NN": {
+    "NA": {
+      "BS": {
+        "nivå": [
+          "beskrivelsesystem",
+          "kilde til variasjon",
+          "variabel",
+          "verdi"
+        ]
+      },
+      "MI": {
+        "nivå": ["lokal kompleks miljøvariabel", "miljøvariabel", "basistrinn"]
+      },
+      "nivå": [
+        "naturmangfold",
+        "hovedtypegruppe",
+        "hovedtype",
+        "kartleggingsenhet 1:20000",
+        "kartleggingsenhet 1:5000",
+        "grunntype"
+      ]
+    }
+  },
+  "OR": { "nivå": ["organisasjon"] },
+  "VV": { "nivå": ["naturvernområde"] }
 }

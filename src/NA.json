@@ -1,14 +1,14 @@
 {
-  "prefiks": "NA",
+  "prefiks": "NN-NA",
   "tittel": "natursystem",
   "hovedtype": {
-    "prefiks": "NA-HT",
-    "definisjonsgrunnlag": { "prefiks": "NA-HT-DG" },
+    "prefiks": "NN-NA-HT",
+    "definisjonsgrunnlag": { "prefiks": "NN-NA-HT-DG" },
     "prosedyrekategori": {
-      "prefiks": "NA-HT-PK"
+      "prefiks": "NN-NA-HT-PK"
     },
     "kunnskap": {
-      "prefiks": "NA-HT-KG"
+      "prefiks": "NN-NA-HT-KG"
     }
   }
 }

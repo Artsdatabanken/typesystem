@@ -7,6 +7,12 @@ const fremmedArt = require("./FA-metoder");
 const verneområde = require("./VV-metoder");
 const nivåer = require("./nivåer");
 
+function sorteringsnøkkel(kode) {
+  kode = kode.replace("+", "Y");
+  kode = kode.replace("¤", "Z");
+  return kode;
+}
+
 const typesystem = {
   art: art,
   natursystem: natursystem,
@@ -23,10 +29,8 @@ const typesystem = {
    * fra lav til høy verdi
    */
   sorterKoder(koder) {
-    return koder.sort((a1, b1) => {
-      const a = a1.replace("¤", "Z");
-      const b = b1.replace("¤", "Z");
-      return a > b ? 1 : -1;
+    return koder.sort((a, b) => {
+      return sorteringsnøkkel(a) > sorteringsnøkkel(b) ? 1 : -1;
     });
   },
 

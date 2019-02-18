@@ -2,6 +2,15 @@ var assert = require("assert");
 var typesystem = require("../src/index");
 
 describe("typesystem", function() {
+  it("sorter rasutsatthet", function() {
+    const expected = ["RU-A", "RU-B", "RU-C", "RU-D", "RU-E", "RU-¤"].join(",");
+    assert.equal(
+      typesystem
+        .sorterKoder(["RU-¤", "RU-D", "RU-A", "RU-C", "RU-E", "RU-B"])
+        .join(","),
+      expected
+    );
+  });
   it("splitt T44-E-1", function() {
     assert.equal(typesystem.splittKode("NA-T44-E-1").join("/"), "NA/T/44/E-1");
   });

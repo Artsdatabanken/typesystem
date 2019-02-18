@@ -18,6 +18,18 @@ const typesystem = {
   rotkode: "~",
   nivåer: nivåer,
 
+  /*
+   * Sorterer kodene slik at spesielt gradientverdier havner i rekkefølge
+   * fra lav til høy verdi
+   */
+  sorterKoder(koder) {
+    return koder.sort((a1, b1) => {
+      const a = a1.replace("¤", "Z");
+      const b = b1.replace("¤", "Z");
+      return a > b ? 1 : -1;
+    });
+  },
+
   hentNivaa(kode) {
     let cursor = this.nivåer;
     const frags = this.splittKode(kode);

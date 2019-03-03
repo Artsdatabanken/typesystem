@@ -39,7 +39,19 @@ describe("typesystem", function() {
   it("Nivå for åker", function() {
     assert.equal(
       typesystem.hentNivaa("NN-NA-T44").join(","),
-      "hovedtype,hovedtypegruppe,naturmangfold"
+      "hovedtype,hovedtypegruppe,natursystem,natur i Norge"
+    );
+  });
+  it("Nivå for by", function() {
+    assert.equal(
+      typesystem.hentNivaa("NN-LA-KLG-AI-1").join(","),
+      "gradienttrinn,landskapsgradient,landskap,natur i Norge"
+    );
+  });
+  it("Nivå for bioklimatisk sone 4", function() {
+    assert.equal(
+      typesystem.hentNivaa("NN-NA-BS-6SO-4").join(","),
+      "verdi,variabel,kilde til variasjon,beskrivelsesystem,natursystem,natur i Norge"
     );
   });
   it("Nivå for Børgefjell", function() {

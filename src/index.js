@@ -34,22 +34,21 @@ const typesystem = {
     });
   },
 
+  nivå(cursor, frags) {
+    let frag = frags.shift();
+    if (!cursor[frag]) return cursor.nivå.slice(0, frags.length + 2).reverse();
+
+    let r = this.nivå(cursor[frag], frags);
+    if (!cursor.nivå) throw new Error("Mangler nivå i " + frag);
+    r.push(cursor.nivå[0]);
+    return r;
+  },
+
   hentNivaa(kode) {
     let cursor = this.nivåer;
     const frags = this.splittKode(kode);
-    while (frags.length > 0) {
-      let frag = frags.shift();
-      if (!cursor[frag]) {
-        const nivå = cursor.nivå;
-        if (!nivå) return [];
-        return nivå.slice(0, frags.length + 2).reverse();
-      }
-      cursor = cursor[frag];
-    }
-    const prefiks = frags[0];
-    if (!(prefiks in this.nivåer)) return [];
-    const grein = this.nivåer[prefiks];
-    return grein.slice(0, frags.length).reverse();
+    let frag = frags.shift();
+    return this.nivå(cursor[frag], frags);
   },
 
   // Deler opp koden i ett array av segmenter, 1 for hvert nivå

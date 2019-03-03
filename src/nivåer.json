@@ -1,23 +1,47 @@
 {
-  "AO": { "nivå": ["administrativt område", "fylke", "kommune"] },
+  "AO": {
+    "nivå": ["administrativt område", "fylke", "kommune"]
+  },
   "AR": {
-    "RL": { "nivå": ["rødlistekategori"] },
+    "RL": {
+      "nivå": ["rødlistekategori"]
+    },
     "nivå": [
       "art",
       "rike",
+      "underrike",
       "rekke",
       "underrekke",
+      "overklasse",
       "klasse",
+      "underklasse",
+      "infraklasse",
+      "kohort",
       "overorden",
       "orden",
       "underorden",
       "infraorden",
+      "overfamilie",
       "familie",
+      "underfamilie",
+      "tribus",
+      "undertribus",
       "slekt",
-      "art"
+      "underslekt",
+      "seksjon",
+      "art",
+      "underart",
+      "varietet",
+      "form"
     ]
   },
   "NN": {
+    "LA": {
+      "KLG": {
+        "nivå": ["landskapsgradient", "gradienttrinn"]
+      },
+      "nivå": ["landskap", "hovedtypegruppe", "hovedtype", "grunntype"]
+    },
     "NA": {
       "BS": {
         "nivå": [
@@ -27,19 +51,24 @@
           "verdi"
         ]
       },
-      "MI": {
+      "LKM": {
         "nivå": ["lokal kompleks miljøvariabel", "miljøvariabel", "basistrinn"]
       },
       "nivå": [
-        "naturmangfold",
+        "natursystem",
         "hovedtypegruppe",
         "hovedtype",
         "kartleggingsenhet 1:20000",
         "kartleggingsenhet 1:5000",
         "grunntype"
       ]
-    }
+    },
+    "nivå": ["natur i Norge"]
   },
-  "OR": { "nivå": ["organisasjon"] },
-  "VV": { "nivå": ["naturvernområde"] }
+  "OR": {
+    "nivå": ["organisasjon"]
+  },
+  "VV": {
+    "nivå": ["naturvernområde"]
+  }
 }

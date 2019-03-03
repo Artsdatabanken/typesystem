@@ -38,36 +38,56 @@ describe("typesystem", function() {
   });
   it("Nivå for åker", function() {
     assert.equal(
-      typesystem.hentNivaa("NN-NA-T44").join(","),
+      typesystem
+        .hentNivaa("Natur_i_Norge/Natursystem/Fastmarkssystemer/Åker")
+        .join(","),
       "hovedtype,hovedtypegruppe,natursystem,natur i Norge"
     );
   });
   it("Nivå for katalog", function() {
-    assert.equal(typesystem.hentNivaa("~").join(","), "");
+    assert.equal(typesystem.hentNivaa("").join(","), "");
   });
-  it("Nivå for by", function() {
+  it("Nivå for bebygd", function() {
     assert.equal(
-      typesystem.hentNivaa("NN-LA-KLG-AI-1").join(","),
+      typesystem
+        .hentNivaa(
+          "Natur_i_Norge/Landskap/Landskapsgradient/Arealbruksintensitet/Lav_arealbruksintensitet"
+        )
+        .join(","),
       "gradienttrinn,landskapsgradient,landskap,natur i Norge"
     );
   });
   it("Nivå for rødliste", function() {
-    assert.equal(typesystem.hentNivaa("RL").join(","), "rødlistekategori");
+    assert.equal(
+      typesystem.hentNivaa("Truet_art_natur").join(","),
+      "rødlistekategori"
+    );
   });
   it("Nivå for beskrivelsessystem", function() {
     assert.equal(
-      typesystem.hentNivaa("NN-NA-BS").join(","),
+      typesystem
+        .hentNivaa("Natur_i_Norge/Natursystem/Beskrivelsessystem")
+        .join(","),
       "beskrivelsesystem,natursystem,natur i Norge"
     );
   });
   it("Nivå for bioklimatisk sone 4", function() {
     assert.equal(
-      typesystem.hentNivaa("NN-NA-BS-6SO-4").join(","),
+      typesystem
+        .hentNivaa(
+          "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/Bioklimatiske_soner/Lavalpin_sone_(LA)"
+        )
+        .join(","),
       "verdi,variabel,kilde til variasjon,beskrivelsesystem,natursystem,natur i Norge"
     );
   });
   it("Nivå for Børgefjell", function() {
-    assert.equal(typesystem.hentNivaa("VV-42").join(","), "naturvernområde");
+    assert.equal(
+      typesystem
+        .hentNivaa("Naturvernområde/Børgefjell_Byrkije_nasjonalpark")
+        .join(","),
+      "naturvernområde"
+    );
   });
   it("NA foreldre", function() {
     assert.equal(typesystem.forfedre("NA").join(","), "NA");

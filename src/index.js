@@ -46,10 +46,10 @@ const typesystem = {
     return r;
   },
 
-  hentNivaa(kode) {
-    if (kode === typesystem.rotkode) return [];
+  hentNivaa(url) {
+    if (!url) return [];
     let cursor = this.nivåer;
-    const frags = this.splittKode(kode);
+    const frags = url.split("/");
     let frag = frags.shift();
     return this.nivå(cursor[frag], frags);
   },

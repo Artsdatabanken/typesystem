@@ -1,11 +1,5 @@
 {
-  "RL": {
-    "nivå": ["rødlistekategori"]
-  },
-  "AO": {
-    "nivå": ["administrativt område", "fylke", "kommune"]
-  },
-  "AR": {
+  "Biota": {
     "nivå": [
       "art",
       "rike",
@@ -35,15 +29,21 @@
       "form"
     ]
   },
-  "NN": {
-    "LA": {
-      "KLG": {
+  "Datakilde": {
+    "nivå": ["organisasjon"]
+  },
+  "Fylke": {
+    "nivå": ["administrativt område", "fylke", "kommune"]
+  },
+  "Natur_i_Norge": {
+    "Landskap": {
+      "Landskapsgradient": {
         "nivå": ["landskapsgradient", "gradienttrinn"]
       },
       "nivå": ["landskap", "hovedtypegruppe", "hovedtype", "grunntype"]
     },
-    "NA": {
-      "BS": {
+    "Natursystem": {
+      "Beskrivelsessystem": {
         "nivå": [
           "beskrivelsesystem",
           "kilde til variasjon",
@@ -51,7 +51,7 @@
           "verdi"
         ]
       },
-      "LKM": {
+      "Lokale_komplekse_miljøvariabler": {
         "nivå": ["lokal kompleks miljøvariabel", "miljøvariabel", "basistrinn"]
       },
       "nivå": [
@@ -65,10 +65,10 @@
     },
     "nivå": ["natur i Norge"]
   },
-  "OR": {
-    "nivå": ["organisasjon"]
-  },
-  "VV": {
+  "Naturvernområde": {
     "nivå": ["naturvernområde"]
+  },
+  "Truet_art_natur": {
+    "nivå": ["rødlistekategori"]
   }
 }

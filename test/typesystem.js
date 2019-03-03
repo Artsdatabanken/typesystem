@@ -42,10 +42,19 @@ describe("typesystem", function() {
       "hovedtype,hovedtypegruppe,natursystem,natur i Norge"
     );
   });
+  it("Nivå for katalog", function() {
+    assert.equal(typesystem.hentNivaa("~").join(","), "");
+  });
   it("Nivå for by", function() {
     assert.equal(
       typesystem.hentNivaa("NN-LA-KLG-AI-1").join(","),
       "gradienttrinn,landskapsgradient,landskap,natur i Norge"
+    );
+  });
+  it("Nivå for beskrivelsessystem", function() {
+    assert.equal(
+      typesystem.hentNivaa("NN-NA-BS").join(","),
+      "beskrivelsesystem,natursystem,natur i Norge"
     );
   });
   it("Nivå for bioklimatisk sone 4", function() {

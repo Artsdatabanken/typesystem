@@ -35,9 +35,11 @@ const typesystem = {
   },
 
   nivå(cursor, frags) {
+    const len = frags.length;
     let frag = frags.shift();
-    if (!cursor[frag]) return cursor.nivå.slice(0, frags.length + 2).reverse();
-
+    if (!cursor[frag]) {
+      return cursor.nivå.slice(0, len + 1).reverse();
+    }
     let r = this.nivå(cursor[frag], frags);
     if (!cursor.nivå) throw new Error("Mangler nivå i " + frag);
     r.push(cursor.nivå[0]);
@@ -45,6 +47,7 @@ const typesystem = {
   },
 
   hentNivaa(kode) {
+    if (kode === typesystem.rotkode) return [];
     let cursor = this.nivåer;
     const frags = this.splittKode(kode);
     let frag = frags.shift();

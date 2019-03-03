@@ -1,11 +1,11 @@
 {
+  "RL": {
+    "nivå": ["rødlistekategori"]
+  },
   "AO": {
     "nivå": ["administrativt område", "fylke", "kommune"]
   },
   "AR": {
-    "RL": {
-      "nivå": ["rødlistekategori"]
-    },
     "nivå": [
       "art",
       "rike",

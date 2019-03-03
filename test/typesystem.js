@@ -51,6 +51,9 @@ describe("typesystem", function() {
       "gradienttrinn,landskapsgradient,landskap,natur i Norge"
     );
   });
+  it("Nivå for rødliste", function() {
+    assert.equal(typesystem.hentNivaa("RL").join(","), "rødlistekategori");
+  });
   it("Nivå for beskrivelsessystem", function() {
     assert.equal(
       typesystem.hentNivaa("NN-NA-BS").join(","),

@@ -104,4 +104,11 @@ describe("typesystem", function() {
       "NA,NA-T,NA-T44,NA-T44-B,NA-T44-B-1"
     );
   });
+  it("NN-NA-I-1 nivå", function() {
+    debugger
+    assert.equal(
+      typesystem.nivå("NN-NA-I-1").join(","),
+      "NA,NA-T,NA-T44,NA-T44-B,NA-T44-B-1"
+    );
+  });
 });

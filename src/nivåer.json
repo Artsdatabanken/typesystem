@@ -38,7 +38,7 @@
   "Natur_i_Norge": {
     "Landskap": {
       "Landskapsgradient": {
-        "nivå": ["landskapsgradient", "gradienttrinn"]
+        "nivå": ["landskapsgradient", "landskapsgradient", "gradienttrinn"]
       },
       "nivå": ["landskap", "hovedtypegruppe", "hovedtype", "grunntype"]
     },

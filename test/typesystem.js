@@ -54,7 +54,7 @@ describe("typesystem", function() {
           "Natur_i_Norge/Landskap/Landskapsgradient/Arealbruksintensitet/Lav_arealbruksintensitet"
         )
         .join(","),
-      "gradienttrinn,landskapsgradient,landskap,natur i Norge"
+      "gradienttrinn,landskapsgradient,landskapsgradient,landskap,natur i Norge"
     );
   });
   it("Nivå for rødliste", function() {
@@ -105,10 +105,12 @@ describe("typesystem", function() {
     );
   });
   it("NN-NA-I-1 nivå", function() {
-    debugger
+    debugger;
     assert.equal(
-      typesystem.nivå("NN-NA-I-1").join(","),
-      "NA,NA-T,NA-T44,NA-T44-B,NA-T44-B-1"
+      typesystem
+        .hentNivaa("Natur_i_Norge/Natursystem/Snø-_og_issystemer/Snø-")
+        .join(","),
+      "hovedtype,hovedtypegruppe,natursystem,natur i Norge"
     );
   });
 });

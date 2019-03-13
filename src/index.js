@@ -35,6 +35,7 @@ const typesystem = {
   },
 
   nivå(cursor, frags) {
+    if (!cursor) return null;
     const len = frags.length;
     let frag = frags.shift();
     if (!cursor[frag]) {

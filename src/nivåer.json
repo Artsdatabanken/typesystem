@@ -1,74 +1,74 @@
 {
   "Biota": {
     "nivå": [
-      "art",
-      "rike",
-      "underrike",
-      "rekke",
-      "underrekke",
-      "overklasse",
-      "klasse",
-      "underklasse",
-      "infraklasse",
-      "kohort",
-      "overorden",
-      "orden",
-      "underorden",
-      "infraorden",
-      "overfamilie",
-      "familie",
-      "underfamilie",
-      "tribus",
-      "undertribus",
-      "slekt",
-      "underslekt",
-      "seksjon",
-      "art",
-      "underart",
-      "varietet",
-      "form"
+      "Art",
+      "Rike",
+      "Underrike",
+      "Rekke",
+      "Underrekke",
+      "Overklasse",
+      "Klasse",
+      "Underklasse",
+      "Infraklasse",
+      "Kohort",
+      "Overorden",
+      "Orden",
+      "Underorden",
+      "Infraorden",
+      "Overfamilie",
+      "Familie",
+      "Underfamilie",
+      "Tribus",
+      "Undertribus",
+      "Slekt",
+      "Underslekt",
+      "Seksjon",
+      "Art",
+      "Underart",
+      "Varietet",
+      "Form"
     ]
   },
   "Datakilde": {
-    "nivå": ["organisasjon"]
+    "nivå": ["Organisasjon"]
   },
   "Fylke": {
-    "nivå": ["administrativt område", "fylke", "kommune"]
+    "nivå": ["Administrativt område", "Fylke", "Kommune"]
   },
   "Natur_i_Norge": {
     "Landskap": {
       "Landskapsgradient": {
-        "nivå": ["landskapsgradient", "landskapsgradient", "gradienttrinn"]
+        "nivå": ["Landskapsgradient", "Landskapsgradient", "Gradienttrinn"]
       },
-      "nivå": ["landskap", "hovedtypegruppe", "hovedtype", "grunntype"]
+      "nivå": ["Landskap", "Hovedtypegruppe", "Hovedtype", "Grunntype"]
     },
     "Natursystem": {
       "Beskrivelsessystem": {
         "nivå": [
-          "beskrivelsesystem",
-          "kilde til variasjon",
-          "variabel",
-          "verdi"
+          "Beskrivelsesystem",
+          "Kilde til variasjon",
+          "Variabel",
+          "Verdi"
         ]
       },
       "Lokale_komplekse_miljøvariabler": {
-        "nivå": ["lokal kompleks miljøvariabel", "miljøvariabel", "basistrinn"]
+        "nivå": ["Lokal kompleks miljøvariabel", "Miljøvariabel", "Basistrinn"]
       },
       "nivå": [
-        "natursystem",
-        "hovedtypegruppe",
-        "hovedtype",
-        "kartleggingsenhet 1:20000",
-        "kartleggingsenhet 1:5000",
-        "grunntype"
+        "Natursystem",
+        "Hovedtypegruppe",
+        "Hovedtype",
+        "Kartleggingsenhet 1:20000",
+        "Kartleggingsenhet 1:5000",
+        "Grunntype"
       ]
     },
-    "nivå": ["natur i Norge"]
+    "nivå": ["Natur i Norge"]
   },
   "Naturvernområde": {
-    "nivå": ["naturvernområde"]
+    "nivå": ["Naturvernområde"]
   },
   "Truet_art_natur": {
-    "nivå": ["rødlistekategori"]
+    "nivå": ["Rødlistekategori"]
   }
 }

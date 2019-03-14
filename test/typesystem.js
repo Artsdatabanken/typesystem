@@ -41,7 +41,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Natur_i_Norge/Natursystem/Fastmarkssystemer/Åker")
         .join(","),
-      "hovedtype,hovedtypegruppe,natursystem,natur i Norge"
+      "Hovedtype,Hovedtypegruppe,Natursystem,Natur i Norge"
     );
   });
   it("Nivå for katalog", function() {
@@ -54,13 +54,13 @@ describe("typesystem", function() {
           "Natur_i_Norge/Landskap/Landskapsgradient/Arealbruksintensitet/Lav_arealbruksintensitet"
         )
         .join(","),
-      "gradienttrinn,landskapsgradient,landskapsgradient,landskap,natur i Norge"
+      "Gradienttrinn,Landskapsgradient,Landskapsgradient,Landskap,Natur i Norge"
     );
   });
   it("Nivå for rødliste", function() {
     assert.equal(
       typesystem.hentNivaa("Truet_art_natur").join(","),
-      "rødlistekategori"
+      "Rødlistekategori"
     );
   });
   it("Nivå for beskrivelsessystem", function() {
@@ -68,7 +68,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Natur_i_Norge/Natursystem/Beskrivelsessystem")
         .join(","),
-      "beskrivelsesystem,natursystem,natur i Norge"
+      "Beskrivelsesystem,Natursystem,Natur i Norge"
     );
   });
   it("Nivå for bioklimatisk sone 4", function() {
@@ -78,7 +78,7 @@ describe("typesystem", function() {
           "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/Bioklimatiske_soner/Lavalpin_sone_(LA)"
         )
         .join(","),
-      "verdi,variabel,kilde til variasjon,beskrivelsesystem,natursystem,natur i Norge"
+      "Verdi,Variabel,Kilde til variasjon,Beskrivelsesystem,Natursystem,Natur i Norge"
     );
   });
   it("Nivå for Børgefjell", function() {
@@ -86,7 +86,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Naturvernområde/Børgefjell_Byrkije_nasjonalpark")
         .join(","),
-      "naturvernområde"
+      "Naturvernområde"
     );
   });
   it("NA foreldre", function() {
@@ -110,7 +110,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Natur_i_Norge/Natursystem/Snø-_og_issystemer/Snø-")
         .join(","),
-      "hovedtype,hovedtypegruppe,natursystem,natur i Norge"
+      "Hovedtype,Hovedtypegruppe,Natursystem,Natur i Norge"
     );
   });
 });

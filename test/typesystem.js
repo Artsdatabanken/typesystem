@@ -41,7 +41,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Natur_i_Norge/Natursystem/Fastmarkssystemer/Åker")
         .join(","),
-      "Hovedtype,Hovedtypegruppe,Natursystem,Natur i Norge"
+      "Hovedtype,Hovedtypegruppe,NiN Natursystem,Natur i Norge"
     );
   });
   it("Nivå for katalog", function() {
@@ -54,7 +54,7 @@ describe("typesystem", function() {
           "Natur_i_Norge/Landskap/Landskapsgradient/Arealbruksintensitet/Lav_arealbruksintensitet"
         )
         .join(","),
-      "Gradienttrinn,Landskapsgradient,Landskapsgradient,Landskap,Natur i Norge"
+      "Gradienttrinn,Landskapsgradient,Landskapsgradient,NiN Landskap,Natur i Norge"
     );
   });
   it("Nivå for rødliste", function() {
@@ -68,7 +68,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Natur_i_Norge/Natursystem/Beskrivelsessystem")
         .join(","),
-      "Beskrivelsesystem,Natursystem,Natur i Norge"
+      "Beskrivelsesystem,NiN Natursystem,Natur i Norge"
     );
   });
   it("Nivå for bioklimatisk sone 4", function() {
@@ -78,7 +78,7 @@ describe("typesystem", function() {
           "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/Bioklimatiske_soner/Lavalpin_sone_(LA)"
         )
         .join(","),
-      "Verdi,Variabel,Kilde til variasjon,Beskrivelsesystem,Natursystem,Natur i Norge"
+      "Verdi,Variabel,Kilde til variasjon,Beskrivelsesystem,NiN Natursystem,Natur i Norge"
     );
   });
   it("Nivå for Børgefjell", function() {
@@ -110,7 +110,7 @@ describe("typesystem", function() {
       typesystem
         .hentNivaa("Natur_i_Norge/Natursystem/Snø-_og_issystemer/Snø-")
         .join(","),
-      "Hovedtype,Hovedtypegruppe,Natursystem,Natur i Norge"
+      "Hovedtype,Hovedtypegruppe,NiN Natursystem,Natur i Norge"
     );
   });
 });

@@ -40,8 +40,10 @@
       "Landskapsgradient": {
         "nivå": ["Landskapsgradient", "Landskapsgradient", "Gradienttrinn"]
       },
-      "Menneskelig påvirkning": ["Egenskap", "Påvirkning"],
-      "nivå": ["NiN Landskap", "Hovedtypegruppe", "Hovedtype", "Grunntype"]
+      "nivå": ["Landskap"],
+      "Typeinndeling": {
+        "nivå": ["Hovedtypegruppe", "Hovedtype", "Grunntype"]
+      }
     },
     "Natursystem": {
       "Beskrivelsessystem": {
@@ -55,14 +57,17 @@
       "Miljøvariabler": {
         "nivå": ["Lokal kompleks miljøvariabel", "Miljøvariabel", "Basistrinn"]
       },
-      "nivå": [
-        "NiN Natursystem",
-        "Hovedtypegruppe",
-        "Hovedtype",
-        "Kartleggingsenhet 1:20000",
-        "Kartleggingsenhet 1:5000",
-        "Grunntype"
-      ]
+      "Typeinndeling": {
+        "nivå": [
+          "Typeinndeling",
+          "Hovedtypegruppe",
+          "Hovedtype",
+          "Kartleggingsenhet 1:20000",
+          "Kartleggingsenhet 1:5000",
+          "Grunntype"
+        ]
+      },
+      "nivå": ["Natursystem"]
     },
     "nivå": ["Natur i Norge"]
   },

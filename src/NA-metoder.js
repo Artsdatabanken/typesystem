@@ -5,14 +5,14 @@ const felles = require("./felles");
 const Natursystem = {
   // Slår opp hovedtypen til en grunntype eller kartleggingsenhet
   slåOppHovedtype: function(subkode) {
-    const ofs = subkode.indexOf("-", 6);
+    const ofs = subkode.indexOf("-", 9); //NN-NA-TI-V1-1
     if (ofs < 0) return subkode;
     return subkode.substring(0, ofs);
   },
 
   // Sjekker om koden er en NiN grunntype
   erGrunntype: function(kode) {
-    return !!kode.match(/NA-[A-Z][0-9]+-[0-9]+/gi);
+    return !!kode.match(/NN-NA-TI-[A-Z][0-9]+-[0-9]+/gi);
   },
 
   // Sjekker om koden er på kartleggingsnivå over grunntype (1:500)

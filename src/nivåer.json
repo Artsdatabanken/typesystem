@@ -42,7 +42,7 @@
       },
       "nivå": ["Landskap"],
       "Typeinndeling": {
-        "nivå": ["Hovedtypegruppe", "Hovedtype", "Grunntype"]
+        "nivå": ["Typeinndeling", "Hovedtypegruppe", "Hovedtype", "Grunntype"]
       }
     },
     "Natursystem": {

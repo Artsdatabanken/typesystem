@@ -43,7 +43,7 @@ describe("typesystem", function() {
           "Natur_i_Norge/Natursystem/Typeinndeling/Fastmarkssystemer/Åker"
         )
         .join(","),
-      "Hovedtype,Hovedtypegruppe,Typeinndeling,Natursystem,Natur i Norge"
+      "Hovedtype,Hovedtypegruppe,Naturtype,Natursystem,Natur i Norge"
     );
   });
   it("Nivå for katalog", function() {
@@ -114,7 +114,7 @@ describe("typesystem", function() {
           "Natur_i_Norge/Natursystem/Typeinndeling/Snø-_og_issystemer/Snø-"
         )
         .join(","),
-      "Hovedtype,Hovedtypegruppe,Typeinndeling,Natursystem,Natur i Norge"
+      "Hovedtype,Hovedtypegruppe,Naturtype,Natursystem,Natur i Norge"
     );
   });
 });

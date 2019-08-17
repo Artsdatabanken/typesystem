@@ -32,8 +32,10 @@
   "Datakilde": {
     "nivå": ["Organisasjon"]
   },
-  "Fylke": {
-    "nivå": ["Administrativt område", "Fylke", "Kommune"]
+  "Administrativ_grense": {
+    "Fylke": {
+      "nivå": ["Fylke", "Kommune"]
+    }
   },
   "Natur_i_Norge": {
     "Landskap": {

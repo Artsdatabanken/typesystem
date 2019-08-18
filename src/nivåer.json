@@ -33,8 +33,12 @@
     "nivå": ["Organisasjon"]
   },
   "Administrativ_grense": {
+    "nivå": ["Administrativ grense"],
+    "Maritim_grense": {
+      "nivå": ["Maritim grense", "Grensetype", "Område", "Område"]
+    },
     "Fylke": {
-      "nivå": ["Fylke", "Kommune"]
+      "nivå": ["Norge", "Fylke", "Kommune"]
     }
   },
   "Natur_i_Norge": {

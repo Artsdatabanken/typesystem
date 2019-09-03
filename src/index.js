@@ -115,7 +115,7 @@ const typesystem = {
       if (kode in r) return [kode];
       kode = kode.substring(0, kode.length - 1);
     }
-    return [this.rotkode];
+    return [];
   },
 
   kobleForeldre: function(r) {

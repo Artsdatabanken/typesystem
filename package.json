@@ -1,6 +1,6 @@
 {
   "name": "@artsdatabanken/typesystem",
-  "version": "10.5.5",
+  "version": "10.5.6",
   "description": "Bibliotek for å jobbe med koder i Artsdatabanken sitt typesystem",
   "main": "build/index.js",
   "scripts": {

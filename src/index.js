@@ -121,7 +121,7 @@ const typesystem = {
   kobleForeldre: function(r) {
     for (let key of Object.keys(r)) {
       const node = r[key];
-      if (!node.foreldre) node.foreldre = finnForeldre(key, r);
+      if (!node.foreldre) node.foreldre = this.finnForeldre(key, r);
     }
   }
 };

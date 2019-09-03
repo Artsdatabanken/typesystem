@@ -55,19 +55,6 @@ const typesystem = {
     return this.nivå(cursor[frag], frags);
   },
 
-  // Deler opp koden i ett array av segmenter, 1 for hvert nivå
-  // tar hensyn til målestokk for NA
-  // i.e. 'NA-T44-E-1 => ['NA','T','44','E-1']
-  splittKode: function(kode) {
-    if (kode && kode.toUpperCase().indexOf("NA") === 0) {
-      // HACK: treat C-2, E-1 etc as one level
-      let segments = kode.match(/([a-eA-E]-[1-9]+)|[a-zA-Z]+|[0-9]+/g);
-      return segments || [];
-    }
-    let segments = kode.match(/[a-zA-Z]+|[0-9]+/g);
-    return segments || [];
-  },
-
   erSkille: function(c, p) {
     if ("_-".indexOf(p) >= 0) return false;
     if ("_-".indexOf(c) >= 0) return true;
@@ -116,6 +103,26 @@ const typesystem = {
 
   capitalizeTittel: function(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  },
+
+  finnForeldre: function(kode, r) {
+    if (kode === typesystem.rotkode) return [];
+    const segs = typesystem.splittKode(kode);
+    if (segs.length <= 1) return [typesystem.rotkode];
+    const len = segs[segs.length - 1].length;
+    kode = kode.substring(0, kode.length - len);
+    while (kode.length > 0) {
+      if (kode in r) return [kode];
+      kode = kode.substring(0, kode.length - 1);
+    }
+    return [typesystem.rotkode];
+  },
+
+  kobleForeldre: function(r) {
+    for (let key of Object.keys(r)) {
+      const node = r[key];
+      if (!node.foreldre) node.foreldre = finnForeldre(key, r);
+    }
   }
 };
 

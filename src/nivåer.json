@@ -33,12 +33,12 @@
     "nivå": ["Organisasjon"]
   },
   "Administrativ_grense": {
-    "nivå": ["Administrativ grense"],
-    "Maritim_grense": {
-      "nivå": ["Maritim grense", "Grensetype", "Område", "Område"]
-    },
-    "Fylke": {
-      "nivå": ["Norge", "Fylke", "Kommune"]
+    "nivå": ["Administrativ grense", "Grensetype", "Område", "Område"],
+    "Norges_territorialområde": {
+      "nivå": ["Norges_territorialområde"],
+      "Fastlands-Norge": {
+        "nivå": ["Fastlands-Norge", "Fylke", "Kommune"]
+      }
     }
   },
   "Natur_i_Norge": {
@@ -50,30 +50,6 @@
       "Typeinndeling": {
         "nivå": ["Landskapstype", "Hovedtypegruppe", "Hovedtype", "Grunntype"]
       }
-    },
-    "Natursystem": {
-      "Beskrivelsessystem": {
-        "nivå": [
-          "Beskrivelsesystem",
-          "Kilde til variasjon",
-          "Variabel",
-          "Verdi"
-        ]
-      },
-      "Miljøvariabler": {
-        "nivå": ["Lokal kompleks miljøvariabel", "Miljøvariabel", "Basistrinn"]
-      },
-      "Typeinndeling": {
-        "nivå": [
-          "Naturtype",
-          "Hovedtypegruppe",
-          "Hovedtype",
-          "Kartleggingsenhet 1:20000",
-          "Kartleggingsenhet 1:5000",
-          "Grunntype"
-        ]
-      },
-      "nivå": ["Natursystem"]
     },
     "nivå": ["Natur i Norge"]
   },

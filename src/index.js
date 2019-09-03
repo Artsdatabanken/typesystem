@@ -106,16 +106,16 @@ const typesystem = {
   },
 
   finnForeldre: function(kode, r) {
-    if (kode === typesystem.rotkode) return [];
-    const segs = typesystem.splittKode(kode);
-    if (segs.length <= 1) return [typesystem.rotkode];
+    if (kode === this.rotkode) return [];
+    const segs = this.splittKode(kode);
+    if (segs.length <= 1) return [this.rotkode];
     const len = segs[segs.length - 1].length;
     kode = kode.substring(0, kode.length - len);
     while (kode.length > 0) {
       if (kode in r) return [kode];
       kode = kode.substring(0, kode.length - 1);
     }
-    return [typesystem.rotkode];
+    return [this.rotkode];
   },
 
   kobleForeldre: function(r) {

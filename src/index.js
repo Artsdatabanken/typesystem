@@ -1,4 +1,3 @@
-// asdf
 const natursystem = require("./NA-metoder");
 const art = require("./AR-metoder");
 const administrativtOmråde = require("./AO-metoder");
@@ -6,7 +5,7 @@ const miljøvariabel = require("./MI-metoder");
 const fremmedArt = require("./FA-metoder");
 const verneområde = require("./VV-metoder");
 const nivåer = require("./nivåer");
-
+const lagHierarki = require("./kodehierarki");
 function sorteringsnøkkel(kode) {
   kode = kode.replace("+", "Y");
   kode = kode.replace("¤", "Z");
@@ -23,6 +22,7 @@ const typesystem = {
   verneområde: verneområde,
   rotkode: "~",
   nivåer: nivåer,
+  lagHierarki,
 
   /*
    * Sorterer kodene slik at spesielt gradientverdier havner i rekkefølge

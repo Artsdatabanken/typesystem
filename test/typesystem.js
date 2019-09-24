@@ -36,16 +36,6 @@ describe("typesystem", function() {
   it("Kapitaliserer canis lupus", function() {
     assert.equal(typesystem.capitalizeTittel("cAnis LuPus"), "Canis lupus");
   });
-  it("Nivå for åker", function() {
-    assert.equal(
-      typesystem
-        .hentNivaa(
-          "Natur_i_Norge/Natursystem/Typeinndeling/Fastmarkssystemer/Åker"
-        )
-        .join(","),
-      "Hovedtype,Hovedtypegruppe,Naturtype,Natursystem,Natur i Norge"
-    );
-  });
   it("Nivå for katalog", function() {
     assert.equal(typesystem.hentNivaa("").join(","), "");
   });
@@ -65,24 +55,7 @@ describe("typesystem", function() {
       "Rødlistekategori"
     );
   });
-  it("Nivå for beskrivelsessystem", function() {
-    assert.equal(
-      typesystem
-        .hentNivaa("Natur_i_Norge/Natursystem/Beskrivelsessystem")
-        .join(","),
-      "Beskrivelsesystem,Natursystem,Natur i Norge"
-    );
-  });
-  it("Nivå for bioklimatisk sone 4", function() {
-    assert.equal(
-      typesystem
-        .hentNivaa(
-          "Natur_i_Norge/Natursystem/Beskrivelsessystem/Regional_naturvariasjon/Bioklimatiske_soner/Lavalpin_sone_(LA)"
-        )
-        .join(","),
-      "Verdi,Variabel,Kilde til variasjon,Beskrivelsesystem,Natursystem,Natur i Norge"
-    );
-  });
+
   it("Nivå for Børgefjell", function() {
     assert.equal(
       typesystem
@@ -104,17 +77,6 @@ describe("typesystem", function() {
     assert.equal(
       typesystem.forfedre("NA-T44-B-1").join(","),
       "NA,NA-T,NA-T44,NA-T44-B,NA-T44-B-1"
-    );
-  });
-  it("NN-NA-I-1 nivå", function() {
-    debugger;
-    assert.equal(
-      typesystem
-        .hentNivaa(
-          "Natur_i_Norge/Natursystem/Typeinndeling/Snø-_og_issystemer/Snø-"
-        )
-        .join(","),
-      "Hovedtype,Hovedtypegruppe,Naturtype,Natursystem,Natur i Norge"
     );
   });
 });

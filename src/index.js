@@ -20,7 +20,6 @@ const typesystem = {
   fremmedArt: fremmedArt,
   administrativtOmråde: administrativtOmråde,
   verneområde: verneområde,
-  rotkode: "~",
   nivåer: nivåer,
   lagHierarki,
 
@@ -106,9 +105,8 @@ const typesystem = {
   },
 
   finnForeldre: function(kode, r) {
-    if (kode === this.rotkode) return [];
     const segs = this.splittKode(kode);
-    if (segs.length <= 1) return [this.rotkode];
+    if (segs.length <= 1) return [];
     const len = segs[segs.length - 1].length;
     kode = kode.substring(0, kode.length - len);
     while (kode.length > 0) {
